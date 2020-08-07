@@ -17,13 +17,18 @@ def check_input(user_input)
   return user_input.to_i
 end
 
+def initialize_nums
+end
+
 #MAIN
 puts "Hello! We are going to total some numbers!"
 total = 0
 number1 = 0
 number2 = 1
 
-while (number1 >= 0 && number2 >= 0)
+while (number1 >= 0 && number2 >= 0) 
+  number1 = 0
+  number2 = 1
   until number1 == number2
     puts "Please enter a number. Enter a negative number to quit."
     number1 = check_input(number1)
@@ -32,8 +37,9 @@ while (number1 >= 0 && number2 >= 0)
     if number1 != number2
       puts "#{number1} does not match #{number2}, please try again."
     end
-  end
   total += number1
+  puts "the current total is #{total}"
+  end
 end
 
 puts "Result: #{total}"
