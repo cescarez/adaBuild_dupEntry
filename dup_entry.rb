@@ -5,7 +5,6 @@
 
 #Functions
 def check_input(user_input)
-  user_input = gets.chomp
   while (user_input.to_i == 0 && user_input.to_s != "0")
     puts "Invalid input. Please re-enter a non-negative integer. Enter a negative integer to exit. "
     user_input = gets.chomp
@@ -25,9 +24,9 @@ while (number1 >= 0 && number2 >= 0)
   number2 = number1 + 1 #offset number1 and number2 to enter below loop
   until number1 == number2
     puts "Please enter a number. Enter a negative number to quit."
-    number1 = check_input(number1)
+    number1 = check_input(gets.chomp)
     puts "Please enter the number again to confirm entry."
-    number2 = check_input(number2) 
+    number2 = check_input(gets.chomp) 
     if number1 != number2
       puts "#{number1} does not match #{number2}, please try again."
     end
