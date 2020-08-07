@@ -22,13 +22,10 @@ end
 
 #MAIN
 puts "Hello! We are going to total some numbers!"
-total = 0
-number1 = 0
-number2 = 1
+total, number1, number2 = [0] * 3
 
 while (number1 >= 0 && number2 >= 0) 
-  number1 = 0
-  number2 = 1
+  number2 = number1 + 1 #offset number1 and number2 to enter below loop
   until number1 == number2
     puts "Please enter a number. Enter a negative number to quit."
     number1 = check_input(number1)
