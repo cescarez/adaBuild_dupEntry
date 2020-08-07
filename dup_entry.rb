@@ -17,9 +17,6 @@ def check_input(user_input)
   return user_input.to_i
 end
 
-def initialize_nums
-end
-
 #MAIN
 puts "Hello! We are going to total some numbers!"
 total, number1, number2 = [0] * 3
