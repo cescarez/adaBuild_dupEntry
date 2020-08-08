@@ -30,9 +30,9 @@ while (number1 >= 0 && number2 >= 0)
     if number1 != number2
       puts "#{number1} does not match #{number2}, please try again."
     end
-  total += number1
-  puts "the current total is #{total}"
   end
+    total += number1
+    puts "the current total is #{total}"
 end
 
 puts "Result: #{total}"
